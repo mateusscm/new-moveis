@@ -1,0 +1,350 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway|Reenie+Beanie);
+
+html, body {
+    height: 100%; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #000;
+}
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.topnav a.active {
+    background-color: #333;
+    color: white;
+}
+  
+.topnav .search-container {
+    float: right;
+}
+  
+.topnav input[type=search] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+  
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+  
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+.nav {
+    background-color: #7fc3ff;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+}
+  
+  
+ul {
+    background: black;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+}
+  
+li {
+    color: #fff;
+    background: black;
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.only {
+    float: right;
+    padding: 0.8rem;
+}
+    
+li a {
+    color: #fff;
+}
+  
+li:hover {
+    background: #333;
+    cursor: pointer;
+}
+  
+ul li ul {
+    background: orange;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+  
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    z-index: 1000;
+}
+  
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+  
+.wrap {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #120103;
+    color: #fff;
+    text-align: center;
+}
+  
+.wrap header {
+    background: transparent;
+    box-shadow: none;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+}
+  
+.wrap label {
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 2.25em;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 25px;
+    padding: 0 1em;
+}
+  
+.wrap label:hover {
+    background: #333;
+}
+  
+.slide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-color: #120103;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: left 0s 0.75s;
+}
+  
+.slide-one {
+    background-image: url("../assets/sofa.jpg");
+}
+  
+.slide-two {
+    background-image: url("../assets/banquetas.jpg");
+}
+  
+.slide-three {
+    background-image: url("../assets/buffets.jpg");
+}
+  
+.slide-four {
+    background-image: url("../assets/externas.jpg");
+}
+  
+[id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+  
+.slide h1 {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s 0.5s, opacity 0.5s;
+    background-color: rgba(0,0,0,0.5);
+    display: inline-flex;
+    float: left;
+    padding: 10px;
+    font-size: 3.2em;
+
+}
+  
+[id^="slide"]:checked + .slide h1 {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s 0.5s;
+}
+
+.news {
+    font-family: "Raleway";
+    width: 100%; 
+    height: 25px; 
+    border-bottom: 1px solid black; 
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.news span {
+    font-size: 40px; 
+    background-color: #efefef;
+    padding: 0 10px;
+}
+
+.news-imgs {
+    margin-top: 20px;
+}
+
+img {
+    width: 250px;
+    height: 180px;
+}
+  
+a {
+    color: black;
+}
+  
+.caption, h1, .date {
+    margin: 0;
+    text-align: center;
+}
+  
+.caption, h1 {
+    font-family: "Reenie Beanie", sans-serif;
+    font-size: 2em;
+    padding: 10px 10px 0 10px;
+}
+  
+.date {
+    font-size: 0.75em;
+  }
+  
+.description {
+    font-size: 0.9em;
+    padding: 0 20px 20px 20px;
+    text-align: left;
+}
+  
+.container {
+    perspective: 1000px;
+    display: inline-block;
+    margin: 1%;
+}
+  
+.container:hover .flipper {
+    transform: rotateY(180deg);
+}
+  
+.container, .front, .back {
+    width: 250px;
+    height: 250px;
+}
+  
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+  
+.front, .back {
+    font-family: "Raleway", sans-serif;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+.front {
+    z-index: 2;
+}
+  
+.back {
+    transform: rotateY(180deg);
+}
+  
+#content {
+    text-align: center;
+}
+
+.foot-sec {
+    text-align: right;
+    font-weight: bold;
+}
+
+.foot-sec a:hover {
+    color: #333;
+    text-decoration: line-through;
+}
+
+.lema {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.text {
+    text-align: center;
+    line-height: 30px;
+    padding: 20px 20vw;
+    font-family: sans-serif;
+}
+
+#bottom {
+    clear: both;
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color: #000;
+}
+
+#bottom .img {
+    width: 50px;
+    height: auto;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Good UX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header class="topnav">
+        <a class="active" href="#home">N E W - M Ó V E I S</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="search" placeholder="Procurar.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+    <section>
+        <div class="wrap">
+            <header id="count">
+                <label for="slide-1-trigger">1</label>
+                <label for="slide-2-trigger">2</label>
+                <label for="slide-3-trigger">3</label>
+                <label for="slide-4-trigger">4</label>
+            </header>
+            <input id="slide-1-trigger" type="radio" name="slides" checked>
+            <section class="slide slide-one">
+                <h1>Sofás</h1>
+            </section>
+            <input id="slide-2-trigger" type="radio" name="slides">
+            <section class="slide slide-two">
+                <h1>Banquetas</h1>
+            </section>
+            <input id="slide-3-trigger" type="radio" name="slides">
+            <section class="slide slide-three">
+                <h1>Buffets</h1>
+            </section>
+            <input id="slide-4-trigger" type="radio" name="slides">
+            <section class="slide slide-four">
+                <h1>Externas</h1>
+            </section>
+        </div>
+    </section>
+    <section>
+        <nav role="navigation" class="nav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MÓVEIS</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Banquetas</a></li>
+                        <li><a href="#">Buffets</a></li>
+                        <li><a href="#">Externas</a></li>
+                        <li><a href="#">Jantar</a></li>
+                        <li><a href="#">Sofás</a></li>
+                        <li><a href="#">Sofás-Cama</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">OUTROS</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Exposições</a></li>
+                        <li><a href="#">Decorações</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">EMPRESA</a></li>
+                <li><a href="#">GALERIA</a></li>
+                <li><a href="#">CONTATO</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <div class="news">
+            <span>
+                Novidades
+            </span>
+        </div>
+        <div id="content">
+            <p>Conheça o que há de mais moderno.</p>
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="../assets/ae02.jpg" alt="cherry blossoms">
+                        <p class="caption">Externa</p>
+                    </div>
+                    <div class="back">
+                        <a href="#" target="_blank">
+                            <h1>Externun</h1>
+                        </a>
+                        <p class="date">20/07/2018</p>
+                        <p class="description">A EXTERNUN é a mais nova criação para você que gosta de um material de
+                            qualidade e resistente para o ambiente externo de sua casa. Feito de uma das madeiras mais
+                            resistentes do mundo: o ÉBANO. Possui uma mesa com vidro e quatro cadeiras.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="../assets/dc09.jpg" alt="white daisy">
+                        <p class="caption">Decoração</p>
+                    </div>
+                    <div class="back">
+                        <a href="#" target="_blank">
+                            <h1>Penguin</h1>
+                        </a>
+                        <p class="date">18/09/2018</p>
+                        <p class="description">Penguin é o item decorativo ideal para você que quer deixar seu ambiente
+                            de cozinha um lugar agradável com um toque especial de descontração. Possui quatro pinguins
+                            e uma chaleira.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="../assets/mj08.jpg" alt="Red Purple and Yellow Tulip">
+                        <p class="caption">Mesa Jantar</p>
+                    </div>
+                    <div class="back">
+                        <a href="#" target="_blank">
+                            <h1>Tbl</h1>
+                        </a>
+                        <p class="date">02/02/2019</p>
+                        <p class="description">Uma mesa moderna para sua sala de jantar, material inteiramente branco,
+                            porém revestidos com produtos de qualidade e muita resistência. Mesa de vidro e mais seis
+                            cadeiras brancas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="../assets/bq15.jpg" alt="Red Purple and Yellow Tulip">
+                        <p class="caption">Banqueta</p>
+                    </div>
+                    <div class="back">
+                        <a href="#" target="_blank">
+                            <h1>Bq02</h1>
+                        </a>
+                        <p class="date">05/03/2019</p>
+                        <p class="description"> São diversas opções em modelos, marcas, cores e acabamentos para todos
+                            os gostos. Linha completa com material de extrema qualidade, com um ar totalmente moderno
+                            para os mais diferentes ambientes. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="foot-sec">
+            <p><a href="#">Continuar vendo as novidades...</a></p>
+        </footer>
+    </section>
+    <div class="lema">
+        Do clássico ao moderno, sempre oferecendo o melhor.
+    </div>
+    <section>
+        <div class="news">
+            <span>
+                Por quê?
+            </span>
+        </div>
+        <div class="text">
+            <p>
+                A <b>New-Móveis</b> traz o que há de melhor e mais sofisticado em móveis, estofados,
+                cortinas e decorações, produtos que vão deixar seus ambientes ainda mais aconchegantes e belos.
+                Trabalhamos com produtos da mais alta qualidade, oferecendo as melhores opções em sofás, aparadores,
+                mesas, cadeiras, poltronas, chaises, colchões, camas box e muito mais. Venha nos fazer uma visita e
+                conferir os nossos produtos.
+            </p>
+        </div>
+    </section>
+    <footer id="bottom">
+        <a href="#"><img class="img" src="https://pngimage.net/wp-content/uploads/2018/05/facebook-branco-png-3.png"></a>
+        <a href="#"><img class="img" src="https://pngimage.net/wp-content/uploads/2018/06/logo-instagram-preto-e-branco-png-5.png"></a>
+    </footer>
+</body>
+
+</html>
